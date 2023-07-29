@@ -1,0 +1,92 @@
+src/printf/printf.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/getopt.h:184:6: style: The scope of the variable 'cstart' can be reduced. [variableScope]
+ int cstart, cyclelen, i, j, ncycle, nnonopts, nopts, pos;
+     ^
+test/getopt.h:184:55: style: The scope of the variable 'pos' can be reduced. [variableScope]
+ int cstart, cyclelen, i, j, ncycle, nnonopts, nopts, pos;
+                                                      ^
+test/autotest.cpp:124:20: style:inconclusive: Function 'putchar_' argument 1 names different: declaration 'c' definition 'character'. [funcArgNamesDifferent]
+void putchar_(char character)
+                   ^
+src/printf/printf.h:106:20: note: Function 'putchar_' argument 1 names different: declaration 'c' definition 'character'.
+void putchar_(char c);
+                   ^
+test/autotest.cpp:124:20: note: Function 'putchar_' argument 1 names different: declaration 'c' definition 'character'.
+void putchar_(char character)
+                   ^
+test/test_suite.cpp:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 122 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+test/catch.hpp:2789:0: error: failed to expand 'INFO', Invalid ## usage when expanding 'INTERNAL_CATCH_INFO'. [preprocessorErrorDirective]
+#define INTERNAL_CATCH_INFO( macroName, log ) \
+^
+test/catch.hpp:17512:30: error: syntax error: =[...]; [syntaxError]
+    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+                             ^
+test/catch.hpp:8642:7: style:inconclusive: Technically the member function 'Catch::clara::TextFlow::Column::operator+' can be const. [functionConst]
+ auto operator + (Column const& other)->Columns;
+      ^
+test/catch.hpp:8769:21: note: Technically the member function 'Catch::clara::TextFlow::Column::operator+' can be const.
+inline auto Column::operator + (Column const& other) -> Columns {
+                    ^
+test/catch.hpp:8642:7: note: Technically the member function 'Catch::clara::TextFlow::Column::operator+' can be const.
+ auto operator + (Column const& other)->Columns;
+      ^
+test/catch.hpp:8743:7: style:inconclusive: Technically the member function 'Catch::clara::TextFlow::Columns::operator+' can be const. [functionConst]
+ auto operator + (Column const& col) -> Columns {
+      ^
+test/catch.hpp:8030:9: style: Class 'FatalConditionHandlerGuard' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FatalConditionHandlerGuard(FatalConditionHandler* handler):
+        ^
+test/catch.hpp:8825:9: style: Class 'Args' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        Args( std::initializer_list<std::string> args )
+        ^
+test/catch.hpp:9467:9: style: Struct 'Help' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        Help( bool &showHelpFlag )
+        ^
+test/catch.hpp:9114:22: style: The function 'isFlag' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+        virtual auto isFlag() const -> bool { return true; }
+                     ^
+test/catch.hpp:9107:22: note: Virtual function in base class
+        virtual auto isFlag() const -> bool { return false; }
+                     ^
+test/catch.hpp:9114:22: note: Function in derived class
+        virtual auto isFlag() const -> bool { return true; }
+                     ^
+test/catch.hpp:8520:9: style: Local variable 'width' shadows outer function [shadowFunction]
+   auto width = m_column.m_width - indent();
+        ^
+test/catch.hpp:8612:7: note: Shadowed declaration
+ auto width(size_t newWidth) -> Column& {
+      ^
+test/catch.hpp:8520:9: note: Shadow variable
+   auto width = m_column.m_width - indent();
+        ^
+test/catch.hpp:8678:17: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+    m_iterators.push_back(col.end());
+                ^
+test/catch.hpp:8694:17: style: Consider using std::transform algorithm instead of a raw loop. [useStlAlgorithm]
+    m_iterators.push_back(col.begin());
+                ^
+test/catch.hpp:9404:0: style: Consider using std::any_of algorithm instead of a raw loop. [useStlAlgorithm]
+                if( normaliseOpt( name ) == normalisedToken )
+^
+test/catch.hpp:9555:26: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+                optWidth = (std::max)(optWidth, cols.left.size() + 2);
+                         ^
+test/catch.hpp:7839:24: style: Local variable 'outlier_variance' shadows outer function [shadowFunction]
+                double outlier_variance = Detail::outlier_variance(mean_estimate, stddev_estimate, n);
+                       ^
+test/catch.hpp:7775:20: note: Shadowed declaration
+            double outlier_variance(Estimate<double> mean, Estimate<double> stddev, int n) {
+                   ^
+test/catch.hpp:7839:24: note: Shadow variable
+                double outlier_variance = Detail::outlier_variance(mean_estimate, stddev_estimate, n);
+                       ^
+test/aliasing.c:17:0: style: The function 'putchar_' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
